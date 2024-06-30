@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   GreenSpirit is a small game development initiative focusing on
   experimentation and learning
 baseurl: "/cyanws" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://hvilaverde.github.io/cyanws" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
