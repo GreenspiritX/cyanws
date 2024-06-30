@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {%- include head.html -%}
+
+    <body>
+        {%- include navbar.html -%}
+
+        <div class="post-listings">
+            {% for page in site.pages %}
+
+                {% if page.game == true %}
+
+                <a href="{{ page.url }}">
+                <div class="game-container">
+                    <table style="vertical-align: top;">
+                        <td style="padding-top: 10px; padding-right: 10px;">
+                            <img src="{{page.picture}}" width="158" height="125" style="border-radius: 10px;">
+                        </td>
+
+                        <td style="vertical-align: top;">
+                            <h2 style="margin-top: 0%;"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+                            
+                            <div class="game-description">
+                                <p>{{ page.description }}</p>
+                            </div>
+                        </td>
+                    </table>
+                </div>
+                </a>
+
+                {% endif %} 
+
+            {% endfor %}
+        </div>
+
+        {%- include footer.html -%}
+    </body>
+</html>

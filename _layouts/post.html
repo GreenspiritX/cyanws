@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {%- include head.html -%}
+
+    <body>
+        {%- include navbar.html -%}
+
+        <div class="text-center height-fill-text standard-font main-text">
+            <div class="title-generic">
+                <h1>{{ page.title }}</h1>
+            </div>
+
+            {{ content }}
+        </div>
+
+        {%- include footer.html -%}
+    </body>
+</html>
