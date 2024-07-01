@@ -11,7 +11,7 @@
 
                 {% if page.game == true %}
 
-                <a href="{{ page.url }}">
+                <a href="{{ page.url | relative_url }}">
                 <div class="game-container">
                     <table style="vertical-align: top;">
                         <td style="padding-top: 10px; padding-right: 10px;">
@@ -19,7 +19,7 @@
                         </td>
 
                         <td style="vertical-align: top;">
-                            <h2 style="margin-top: 0%;"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+                            <h2 style="margin-top: 0%;"><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h2>
                             
                             <div class="game-description">
                                 <p>{{ page.description }}</p>
