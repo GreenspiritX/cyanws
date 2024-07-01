@@ -8,12 +8,12 @@
 
         <div class="text-center height-fill-text standard-font post-listings ">
             {% for post in site.posts %}
-                <h2 style="margin-bottom: 0%;">&#x2022; <a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <h2 style="margin-bottom: 0%;">&#x2022; <a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
                 <div class="post-description">
                     <span id="date">Posted on {{ post.date }}</span>
                 </div>
 
-                <a href="{{ post.url }}">
+                <a href="{{ post.url | relative_url }}">
                     <div class="post-excerpt small-headings">
                         <p>{{ post.excerpt }}</p>
                         <p>...</p>
