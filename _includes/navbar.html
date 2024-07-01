@@ -1,25 +1,25 @@
 <nav class="topbar">
     <div class="imglink">
-    <a href="/index.html">
-        <img src="/images/leaflogo.png" alt="GreenSpirit logo" width="32" height="29">
+    <a href="{{ '/index.html' | relative_url }}">
+        <img src="{{ '/images/leaflogo.png' | relative_url }}" alt="GreenSpirit logo" width="32" height="29">
     </a>
     </div>
 
     <div class="namelink">
-        <a href="/index.html">
+        <a href="{{'/index.html' | relative_url }}">
             {{ site.title }}
         </a>
     </div>
 
-    <a href="/games.html">
+    <a href="{{ '/games.html' | relative_url }}">
         Games
     </a>
 
-    <a href="/blog.html">
+    <a href="{{ '/blog.html' | relative_url }}">
         Devlogs
     </a>
 
-    <a href="/contact.html">
+    <a href="{{ '/contact.html' | relative_url">
         Contact
     </a>
 </nav>
